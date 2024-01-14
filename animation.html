@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes pinpog {
+        from {
+          left: 0;
+        }
+        to {
+          left: 400px;
+          background-color: chocolate;
+        }
+      }
+
+      @keyframes bounce {
+        0% {
+          right: 0;
+          left: 0;
+        }
+        10% {
+          right: 400px;
+          left: 50px;
+        }
+        25% {
+          bottom: 25px;
+          top: 25px;
+        }
+        50% {
+          left: 120px;
+          left: 20px;
+        }
+        75% {
+          top: 20px;
+          left: 20px;
+        }
+        100% {
+          right: 360px;
+          left: 360px;
+        }
+      }
+      .stage {
+        width: 500px;
+        height: 300px;
+        background-color: aqua;
+        border: 2px solid red;
+      }
+      .bal {
+        animation: bounce 1s ease-in-out 1s infinite alternate;
+        /* animation: pinpog 1s ease-in-out 0s infinite alternate; */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: greenyellow;
+        color: azure;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="bal"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransFrom</title>
+    <style>
+      .container,
+      .inner {
+        width: 300px;
+        height: 300px;
+      }
+      .inner {
+        /* transform: rotate(45deg); */
+        /* transform: scale(0.5); */
+        /* transform: scale(0.5) rotate(45deg) translateX(45px); */
+        border: 3px solid lawngreen;
+      }
+      .inner:hover {
+        transform: scale(0.5) rotate(45deg) translateX(45px);
+      }
+      .container {
+        background-color: blue;
+        border: 2px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Expolare TransFrom more</h2>
+    <!-- .container*3{container $}>.inner{inner $} -->
+    <div class="container">
+      <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+      <div class="inner">inner 2</div>
+    </div>
+    <div class="container">
+      <div class="inner">inner 3</div>
+    </div>
+  </body>
+</html>
